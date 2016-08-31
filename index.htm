@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sunshine Cove</title>
+	<link rel="icon" type"image/png" href="img/palmtree_icon.jpg">
+	<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.css">
+	<!-- JS  -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script>
+			$( function() {
+				$( "#datepicker" ).datepicker();
+			} );
+		</script>
+</head>
+<body>
+	<header>
+		<div class="row">
+			<img src="img/sunshinecove_logo.png" class="headerLogo" alt="">
+		</div>
+	</header>
+
+	<div class="ghost-center">
+		<h1>The only place to<br/>stay on the<br/>Sunshine Coast</h1>
+	</div>
+
+	<div id="bodyContent">
+		<div class="row">
+			<div id="welcome" class="solidBlue">
+				<h1>Welcome</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales mauris vitae nisl lacinia, a ullamcorper dolor sollicitudin. Suspendisse egestas ex non aliquet efficitur.</p>
+				<p>Quisque vel nunc tempor, scelerisque magna vitae, viverra erat. Fusce iaculis metus ut ex elementum interdum.</p>
+			</div>
+			<div id="book" class="whiteBox">
+				<h1>Book Now</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales mauris vitae nisl lacinia, a ullamcorper dolor sollicitudin.</p>
+				<input type="text" id="datepicker" value="Check-in Date">
+				<input type="text" id="nights" value="Nights">
+				<button id="check">Check Availability</button>
+			</div>
+		</div>
+		<div class="row">
+			<div id="Facilities" class="whiteBox">
+				<h1>Facilities</h1>
+				<p>Quisque vel nunc tempor, scelerisque magna vitae, viverra erat. Fusce iaculis metus ut ex elementum interdum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales mauris vitae nisl lacinia, a ullamcorper dolor sollicitudin. Suspendisse egestas ex non aliquet efficitur.</p>
+			</div>
+			<div id="picture">
+				<img src="img/boardwalk.jpg" alt="">
+			</div>
+		</div>
+	</div>
+
+	<div id="map">
+		<img src="img/fauxMap.jpg" alt="">
+	</div>
+
+
+<!--  CODE FOR REAL MAP - No API, so not using. 
+	<script>
+		function initMap() {
+			var mapDIV = document.getElementById('map');
+			var map = new google.maps.Map(mapDiv, {
+				center: {lat: -27.4518409, lng: 153.0457095},
+				zoom: 8
+			});
+		}
+	</script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=[[APIKEY]]&callback=initMap">
+	</script>
+
+-->
+
+	<footer>
+		<div class="footerContent">
+			<div class="footerLeft">
+				<p>&copy; 2015. Sunshine Cove</p>
+			</div>
+			<div class="footerRight">
+				<img src="img/socialmedia_icons.png" alt="">
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

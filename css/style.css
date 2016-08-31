@@ -1,0 +1,213 @@
+/*	HTML BODY */
+	html, body {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+	}
+	
+/*	Fonts 	*/
+	header h1, .ghost-center h1 {
+		font-family: "Arvo", "Courier New", Serif;
+		font-size: 65px;
+		color: #fff;
+		margin-left: 10%;
+		display: inline-block;
+		vertical-align: middle;
+		/*border: 1px solid red;*/
+	}
+
+	.row div h1 {
+		font-family: "Arvo", "Courier New", Serif;
+		font-size: 48px;
+		margin:0;
+	}
+
+	.row div p, footer p {
+		font-family: "Lato light", Verdana, Sans-Serif;
+		font-size: 16px;
+	}
+
+	footer p {
+		color: #fff;
+	}
+
+/*	Header	*/
+	header {
+		/*padding: 0;*/
+		/*margin: 0;*/
+		/*width: 100%;*/
+		background-image: url(../img/header_bg.jpg);
+        /*background-size: 100% auto;*/
+        background-repeat: no-repeat;
+        background-position: left top;
+        /*	Code for height == bg img 	*/
+		/*display: inline-block;*/
+		background-size: contain;
+		/*margin: 0 auto;*/
+	}
+	header:after {
+		/*position: relative;*/
+		/*top: -398px;*/
+		/*padding-top: 55%;*/
+    	padding-top: 55vw;
+		display: block;
+		content: '';
+	}
+	.headercontent {
+		display: inline-block;
+		vertical-align: middle;
+		border: 1px white solid;
+	}
+	header img {
+		margin-top: 12px;
+		/*margin-left: 10%;*/
+	}
+
+	.ghost-center {
+		position: absolute;
+    	left: 0px;
+    	top: 0px;
+    	z-index: 8;
+    	width: 100%;
+    	height: 55vw;
+
+
+    	/*border: 2px solid red;*/
+	}
+		.ghost-center::before {
+			content: " ";
+			display: inline-block;
+			height: 100%;
+			width: 1%;
+			vertical-align: middle;
+		}
+	
+
+/* 	Body Content 	*/
+	#bodyContent {
+		/*border: 1px solid red;*/
+		margin: auto;
+		margin-top: -70px;
+	}
+
+	.row {
+		padding: 0;
+		width: 1120px;
+		margin: auto;
+	}
+
+	.row div {
+		height: 270px;
+		width: 510px;
+		padding: 11px;
+		display: inline-block;
+		vertical-align: top;
+		margin: 15px 0 15px 0;
+	}
+
+	.row div:first-child {
+		margin-right: 15px;
+	}
+	.row div:last-child {
+		margin-left: 15px;
+	}
+
+		.solidBlue {
+			background-color: #005ba9;
+			color: #fff;
+			border: 5px solid #005ba9;
+		}
+
+		.solidBlue h1 {
+			padding: 0;
+			padding-bottom: 15px;
+			border-bottom: 1px solid #fff;
+		}
+
+		.whiteBox {
+			
+		border: 5px solid #005ba9;
+		}
+
+		.whiteBox h1 {
+			padding: 0;
+			padding-bottom: 15px;
+			border-bottom: 1px solid #005ba9;
+		}
+
+		#picture, #picture img {
+			padding: 0;
+		}
+
+	/*	Inputs and Buttons */
+		input {
+			background-color: #e6e6e6;
+			border-top: 5px solid #005ba9;
+			border-left: none;
+			padding-left: 15px;
+			font-size: 24px;
+			color: #005ba9;
+			margin-bottom: 15px;
+		}
+
+		#datepicker {
+			width: 495px;		
+		}
+
+		#nights {
+			width: 220px;
+			margin-right: 15px;
+			margin-bottom: 15px;
+			display: inline-block;
+		}
+
+		#check {
+			/*border: 5px solid #005ba9;*/
+			font-size: 18px; /*I know this is meant to be 24px, but it didn't fit on one line.*/
+			background-color: #005ba9;
+			color: #fff;
+			font-family: "Arvo", "Courier New", Serif;
+			width: 235px;
+			margin-left: 15px;
+			height: 35.33px;
+			display: inline-block;
+			border:none;
+			vertical-align: top;
+		}
+
+
+/*	Map 	*/
+	#map {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+		#map img {
+			width: 100%;
+			height: auto;
+			margin: 0;
+			padding: 0;
+		}
+
+/*	Footer 	*/
+	footer {
+		background-color: #000;
+		clear: both;
+		height: 51px;
+	}
+		.footerContent {
+			padding: 0;
+			width: 1120px;
+			margin: auto;			
+		}
+		.footerLeft {
+			display: inline-block;
+			float left: 
+		}
+		.footerRight {
+			display: inline-block;
+			float: right;
+		}
+		footer img {
+			margin: 16px 0 16px 0;
+		}
